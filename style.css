@@ -1,0 +1,30 @@
+body {background: #eee;
+}
+.main {
+    width: 340px;
+	height: 520px;
+	background: white;
+	margin: auto;
+	padding: 20px 40px 50px;
+	font-family: Open Sans;
+	font-size: 13px;
+	line-height: 15px;
+	box-shadow: 0 0 8px 3px rgba(209,209,209,0.75);
+
+}
+
+a {
+	text-decoration: none;
+}
+  .text {
+  	text-align: center;
+  	font-size: 16px;
+  	font-weight: bold;
+
+  }
+
+
+  
+.photo {
+	text-align: center;
+}
