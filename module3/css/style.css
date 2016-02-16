@@ -13,10 +13,7 @@ body {
     box-shadow: 0 0 8px 3px rgba(209,209,209,0.75);
     background-color: white;
 }
-/*-------------header------------------------------------------------------------*/
-.header {    
-    margin: auto;   
-}
+/*-------------header----------------------------------------------------------*/  
 
 .logo {
     margin: 50px 0px 0px 45px;
@@ -26,15 +23,12 @@ body {
     width: 970px;
     height: 40px;
     background-color: #525151;
-    background: linear-gradient(to top, #525151, #525151, transparent);
+    background: linear-gradient(to bottom, rgba(72,72,72,1) 0%,rgba(140,140,140,1) 100%);
     margin: 40px 45px;
 }
     
 .header li {
     float: left;
-    
-    
-    
 }
 
 .header li a {
@@ -62,6 +56,7 @@ body {
 
 /*------------------------left menu--------------------------------------------*/
 
+
 .menu ul {
     width: 240px;
     height: 240px;
@@ -74,7 +69,12 @@ body {
     height: 40px;
     width: 240px;
     display: block;
+    border-bottom: 1px solid #c8c8c8;
     
+}
+
+.menu li:last-of-type {
+    border-bottom: none;
 }
 
 .menu a {
@@ -97,13 +97,6 @@ body {
     
 }
 
-hr {
-    height: 1px;
-    color: #c8c8c8;
-    border: none;
-    background: #c8c8c8;
-    margin: 0px;
-}
 /*-----------------------content---------------*/
 
 .content img {
@@ -146,7 +139,7 @@ p {
     color: #2c2c2c;
     width: 478px;
     height: 12px;
-    font-family: OpenSans, sans-serif;
+    font-family: OpenSans, s
     font-size: 14px;
 }
 .footer li a:hover {
