@@ -1,0 +1,163 @@
+body {
+    background-image: url(jpg/bg.jpg);
+    font-family: "Roboto";
+    font-size: 10pt;    
+}
+
+.container {
+    width: 1000px;
+    height: 990px;
+    margin: auto;
+    padding-top: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.71);
+    font-family: "Open Sans";
+    color: #424c43;
+}
+
+.container ul {
+    float: right;
+    padding-right: 35px;
+    color: #128aa7;
+}
+
+.container ul li {
+    padding: 2px;
+    color: #128aa7;
+    
+    
+}
+
+.container ul a {
+    color: #128aa7;
+}
+/*countries---------------------------------------*/
+
+.countries a {
+    width: 65px;
+    float: left;
+    clear: right;
+    position: relative;
+    top: -65px;
+    left: 580px;
+    text-align: center;
+    font-size: 8pt;
+    color: #128aa7;
+}
+
+/*photo------------------------------------------*/
+.photo {
+    height: 240px;
+}
+
+.photo img {
+    height: 240px;
+    width: 1000px;
+    position: relative;
+    top: -54px;
+    border: 1px solid #128aa7;
+    background-repeat: no-repeat;
+}
+
+/*menu-------------------------------------------*/
+
+menu.line_menu {
+    width: 1000px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #343434;
+    list-style: none;
+    width: 1000px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.71);
+    position: relative;
+    z-index: 2;    
+}
+
+menu.line_menu li {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+}
+
+menu.line_menu li a {
+    width: 120px;
+    padding: 0 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+menu.line_menu li a:hover {
+    display: block;
+    padding: 0 10px;
+    border-bottom: 1px solid black;
+}
+
+menu.line_menu li menu {
+    display: block;
+    background-color: #343434;
+    display: none;
+}
+
+menu.line_menu li menu li {
+    float: none;
+}
+
+menu.line_menu li:hover menu {
+    display: block;
+    list-style: none;   
+}
+
+/*content--------------------------------*/
+
+.content {
+    width: 1004px;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    line-height: 20pt;
+}
+
+.leftColumn {
+    width: 209px;
+    float: left;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    border: 1px solid #c7cacf;    
+}
+
+.centerColumn {
+    width: 582px;
+    background: #ffffff;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.rightColumn {
+    width: 209px;
+    float: right;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    border: 1px solid #c7cacf;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #424c43;
+    padding-top: 8px;
+}
+
+.copy {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+    
