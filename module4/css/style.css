@@ -134,6 +134,7 @@ menu.line_menu li:hover menu {
 
 .centerColumn {
     width: 582px;
+    float: left;
     background: #ffffff;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
