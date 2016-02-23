@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'HelveticaNeue Cyr';
+    src:  url('font/HelveticaNeueCyr-Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue Cyr';
+    src:  url('font/HelveticaNeueCyr-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue Cyr';
+    src:  url('font/HelveticaNeueCyr-Roman.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue Cyr';
+    src:  url('font/HelveticaNeueCyr-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 14px;
+    font-family: 'HelveticaNeue Cyr', sans-serif;
+    font-weight: 300;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container {
+    
+    height: 100%;
+    position: relative;
+}
+
+nav {
+    min-width: 765px;
+    background-color: #074f8f;
+}
+
+nav div {
+    float: right;
+}
+
+nav a {
+    color: #60b5ed;
+    display: block;
+    padding: 0 14px;
+    float: right;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #4eabda;
+}
+
+nav .line {
+    height: 30px;
+    width: 1px;
+    margin: 3px 7px;
+    background-color: #60b5ed;
+}
+
+nav .user {
+    margin: 0 17px 0 10px;
+}
+
+nav .user a {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav .user a:hover {
+    background-color: transparent;
+    color: white;
+    line-height: 32px;
+    border-bottom: 4px inset white;
+}
+
+nav .user img {
+    display: block;
+    margin: 5px 9px 0 0;
+    float: left;
+}
+
+nav .login {
+    margin: 0 20px 0 0;
+    padding: 0 15px;
+    background: linear-gradient(to bottom, #50aedb, #2e7ac4);
+    border-radius: 3px;
+}
+
+nav .login a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    float: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+nav .login a:hover {
+    color: white;
+    background: transparent;
+    border-bottom: 4px solid white;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 36px);
+    min-height: 700px;
+    display: flex;
+}
+
+.login-form {
+    width: 560px;
+    height: 613px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.login-form .form-header {
+    font-weight: 200;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 2px;
+    padding: 19px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.login-form .form-body {
+    height: 549px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.login-form .login-fb a {
+    display: inline-block;
+    margin-top: 36px;
+}
+
+.login-form .login-fb a img:hover {
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(128,193,255,.7);
+}
+
+.login-form .form-line {
+    margin: 29px 0;
+}
+
+.login-form .form-line h1 {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.login-form .line {
+    width: 122px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin:4px 0;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid black;
+}
+
+
+.login-form form input[type="text"],[type="email"],[type="password"] {
+    width: 276px;
+    line-height: 33px;
+    height: 33px;
+    border: 0;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+    margin: 0 50px 16px;
+    padding-left: 18px;
+    font-family: 'HelveticaNeue Cyr', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.login-form form input[type="text"]:hover,[type="email"]:hover,[type="password"]:hover {
+    border-bottom: 1px solid #699bcd;
+}
+
+.login-form form input[type="text"]:focus,[type="email"]:focus,[type="password"]:focus {
+    color: white;
+    background-color: #1b5288;
+    border-bottom: 1px solid #699bcd;
+    box-shadow: 0 0 15px rgba(128,193,255,1), inset 0 0 25px rgba(0,0,0,.3);
+    outline: none;
+}
+
+.login-form form input[type="text"]:focus::-webkit-input-placeholder,[type="email"]:focus::-webkit-input-placeholder,[type="password"]:focus::-webkit-input-placeholder {
+    color: white;
+}
+
+.login-form form label {
+    color: #cccccc;
+    display: block;
+    margin-left: -38px;
+    line-height: 24px;
+}
+
+.login-form form input[type="checkbox"] {
+    margin: -2px 3px 0 0;
+    vertical-align: middle;
+}
+
+.login-form form input[type="checkbox"]:focus {
+    color: white;
+    background-color: #1b5288;
+}
+
+.login-form form button {
+    margin: 18px 0;
+    padding: 0 19px;
+    font-family: 'HelveticaNeue Cyr', sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 35px;
+    background: linear-gradient(to bottom, #50aedb,#2e7ac4);
+    border: 0;
+    border-radius: 3px;
+}
+
+.login-form form button:focus{
+    outline: none;
+}
+
+.login-form form button:hover{
+    box-shadow: 0 0 15px rgba(128,193,255,.7);
+}
+
+.login-form form button:active{
+    background: linear-gradient(to bottom, #2e7ac4, #50aedb);
+}
+
+.login-form p{
+    color: #cccccc;
+    font-family: "Helvetica Neue Cyr", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.login-form p a{
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.login-form p a:hover{
+    text-decoration: underline;
+}
