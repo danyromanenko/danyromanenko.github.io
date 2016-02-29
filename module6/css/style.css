@@ -1,0 +1,471 @@
+body {
+    color: black;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container {
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    
+}
+
+/*-------------------------------------HEADER--------------------------------------*/
+
+header {
+    padding-left: 52px;
+    padding-top: 23px;
+}
+
+header img {
+    float: left;
+}
+    
+header h1 {
+    float: left;
+    font-family: Arial;
+    font-size: 14pt;
+    padding-left: 4px;
+    color: #5e696d;
+    letter-spacing: 0.10px;
+}
+
+.login-form {
+    padding: 0 10px;
+    margin: -5px 17px;
+    float: left;
+    position: relative;
+    line-height: 25px;
+    background: #114366;
+    background: linear-gradient(#1f6787, #0c3357);
+    border: 1px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    
+
+}
+
+.login {
+    float: left;
+    padding-left: 14px;
+}
+
+.login:before {
+    content: '';
+    width: 14px;
+    height: 20px;
+    top: 4px;
+    left: 7px;
+    position: absolute;
+    background-image: url("../img/login.png");
+    background-repeat: no-repeat;
+}
+
+.login input {
+    width: 108px;
+    height: 15px;
+    outline: 1px solid rgb(130, 148, 156);;
+    padding-left: 4px;
+    border: 0;
+    margin: 0px 2px;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+}
+
+.login span, span a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+}
+
+#forgot {
+    color: #bfbfbf;
+    font-size: 11px;
+    padding-left: 25px;
+}
+
+.nav {
+    float: right;
+    margin-right: 52px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 2px 6px 0;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);;
+}
+
+.nav li {
+    float: left;
+    margin: 0px 2px 0;
+    padding: 3px 2px;
+}
+
+.background {
+    margin-top: 10px;
+    margin-left: -6px;
+    clear: both;
+}
+
+/*-----------------------MENU--------------------------------------------------*/
+      
+.menu {
+    width: 910px;
+    height: 32px;
+    position: absolute;
+    top: 297px;
+    left: 44px;
+    background: #121415;
+    background-image: linear-gradient(#4d5663, #464d54 10%, #2d3236 15%, #010101);
+    border: 1px solid #2c345a;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #000;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 104px;
+}
+
+.menu ul li a {
+    float: left;
+    margin: 4px 0px 2px;
+    padding-left: 16px;
+    padding-right: 10px;
+    line-height: 26px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #114165;
+    background-image: linear-gradient(#1f6787, #09233b);
+}
+
+.shop {
+    padding-left: 48px;
+}
+.shop a img {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.shop1 {
+  width: 25px;
+  padding-left: 4px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 30px;
+  color: #0d5a8f;
+}
+
+
+.shop2 {
+  width: 52px;
+  padding-left: 11px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #0d5a8f;
+}
+    
+/*--------------------------CONTENT-------------------------*/
+
+.content {
+    clear: both;
+}
+
+.leftside {
+    width: 184px;
+    float: left;
+    position: relative;
+    padding-left: 46px;
+    padding-top: 65px;
+}
+
+.rightside {
+    width: 184px;
+    float: right;
+    position: relative;
+    top: 63px;
+    right: 44px;
+}
+
+
+.title-goods, 
+.title-brands {
+    padding-left: 26px;
+    line-height: 24px;
+    color: #114165;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #8b979c;
+    border-radius: 14px;
+    box-shadow: 1px 1px 2px #000;
+    margin-bottom: 14px;
+    text-decoration:none;
+}
+
+body > div > main > aside.leftside > a { 
+    text-decoration: none;
+/*    --------------------------------------------хром почему то оборачивает элементы h2,h3 в <a> ----------*/
+}
+
+.title-goods:before {
+    content: '';
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    top: 67px;
+    left: 50px;
+    background-image: url(../img/icon1.png);
+    
+}
+
+.title-brands:before {
+    content: '';
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    background-image: url(../img/icon1.png);
+    
+}
+
+.title2,
+.list-brands {
+    width: 120px;
+    padding-left: 30px;
+    display: block;
+    position: relative;
+    line-height: 26px;
+    color: #114165;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+}
+
+.list-brands {
+    width: 104px;
+    margin-left: 13px;
+}
+
+.title2:before,
+.list-brands:before {
+    content: '';
+    width: 22px;
+    height: 24px;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    background-image: url(../img/icon2.png);
+}
+
+.list-goods {
+    margin: 0px 0 0 47px;
+}
+
+.list-goods-item {
+    list-style-type: circle;
+    padding-left: 0;
+    font-size: 13px;
+    font-family: 'Arial', sans-serif;
+    line-height: 25px;
+}
+
+.list-goods-item a {
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.list-goods-item:hover {
+    color: #0c3256;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.list-brands {
+    margin-bottom: 9px;
+}
+
+.disk {
+    margin-top: 10px;
+}
+
+.check {
+    margin-top: 5px;
+    margin-left: 23px;
+    list-style: inside;
+    padding-left: 0;
+    font-size: 8px;
+    font-family: 'Arial', sans-serif;
+    line-height: 25px;
+  /*text-shadow: inset 2px 2px #000;*/
+}
+
+.check-brands {
+    margin: 10px;
+    list-style: inside;
+    padding-left: 0;
+    font-size: 13px;
+    font-family: 'Arial', sans-serif;
+    line-height: 25px;
+}
+
+.button {
+    margin-top: 7px;
+    margin-left: 25px;
+    padding: 0 13px;
+    line-height: 24px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: 1px solid #7a95a1;
+    border-radius: 10px;
+    color: #e5e9ea;
+    background: #124366;
+    background-image: linear-gradient(#1f6787, #09233b);
+    box-shadow: 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*----------------------------PRODUCT-------------------------------------------*/
+
+.catalog {
+    margin: 62px 237px 8px;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(#e5e7e8, #93a7b0);
+    border-radius: 5px;
+    position: relative;
+    top: 62px;
+}
+
+.product {
+    display: inline-block;
+    text-align: center;
+    margin: 15px 13px 10px;
+}
+
+.product-img {
+    width: 135px;
+    padding: 5px 0 2px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #b0b9bc;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+.product-brand {
+    color: #206988;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-model {
+    font-size: 13px;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-price {
+    margin-left: 14px;
+    color: #114165;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.uah {
+    font-size: 12px;
+}
+
+.logos {
+    margin: 33px 0 11px 155px;
+    clear: both;
+    position: relative;
+    top: 65px;
+}
+
+.logos li {
+    float: left;
+    padding: 7px;
+}
+
+/*----------------FOOTER------------*/
+footer {
+    float: left;
+    height: 99px;
+    width: 908px;
+    position: relative;
+    top: 77px;
+    left: 46px;
+    background: #213a4d;
+    border: 1px solid #242c3e;
+}
+
+.footer-nav {
+    margin-top: 5px;
+    margin-left: 302px;
+    margin-bottom: 10px;
+}
+
+.footer-nav li {
+    padding: 6px;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+    
+
+.footer-nav a:hover {
+    color: #4d9fbd;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Arial', sans-serif;
+    color: #754541;
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
