@@ -21,6 +21,8 @@ body {
 header {
     padding-left: 52px;
     padding-top: 23px;
+    margin-bottom: 6px;
+    float: left;
 }
 
 header img {
@@ -117,9 +119,8 @@ header h1 {
 .menu {
     width: 910px;
     height: 32px;
-    position: absolute;
-    top: 297px;
-    left: 44px;
+    clear: both;
+    margin-left: 45px;
     background: #121415;
     background-image: linear-gradient(#4d5663, #464d54 10%, #2d3236 15%, #010101);
     border: 1px solid #2c345a;
@@ -128,7 +129,7 @@ header h1 {
 }
 
 .menu ul {
-    margin: 0;
+    margin: 0px 25px;
     padding: 0;
     padding-left: 104px;
 }
@@ -154,28 +155,30 @@ header h1 {
 
 .shop {
     padding-left: 48px;
+    color: white;
+    font-size: 11px;
 }
 .shop a img {
-  vertical-align: middle;
-  margin-right: 4px;
+    vertical-align: middle;
+    margin-right: 4px;
 }
 
 .shop1 {
-  width: 25px;
-  padding-left: 4px;
-  display: inline-block;
-  font-size: 13px;
-  line-height: 30px;
-  color: #0d5a8f;
+    width: 25px;
+    padding-left: 4px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 30px;
+    color: #0d5a8f;
 }
 
 
 .shop2 {
-  width: 52px;
-  padding-left: 11px;
-  font-size: 13px;
-  line-height: 30px;
-  color: #0d5a8f;
+    width: 52px;
+    padding-left: 11px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #0d5a8f;
 }
     
 /*--------------------------CONTENT-------------------------*/
@@ -186,18 +189,14 @@ header h1 {
 
 .leftside {
     width: 184px;
-    float: left;
-    position: relative;
     padding-left: 46px;
-    padding-top: 65px;
+    padding-top: 25px;
 }
 
 .rightside {
     width: 184px;
     float: right;
-    position: relative;
-    top: 63px;
-    right: 44px;
+    margin: -426px 44px;
 }
 
 
@@ -216,18 +215,13 @@ header h1 {
     text-decoration:none;
 }
 
-body > div > main > aside.leftside > a { 
-    text-decoration: none;
-/*    --------------------------------------------хром почему то оборачивает элементы h2,h3 в <a> ----------*/
-}
-
 .title-goods:before {
     content: '';
     width: 22px;
     height: 21px;
-    position: absolute;
-    top: 67px;
-    left: 50px;
+    clear: both;
+    float: left;
+    margin: 1px -23px;
     background-image: url(../img/icon1.png);
     
 }
@@ -236,9 +230,9 @@ body > div > main > aside.leftside > a {
     content: '';
     width: 22px;
     height: 21px;
-    position: absolute;
-    top: 2px;
-    left: 4px;
+    clear: both;
+    float: left;
+    margin: 1px -23px;
     background-image: url(../img/icon1.png);
     
 }
@@ -346,13 +340,11 @@ body > div > main > aside.leftside > a {
 /*----------------------------PRODUCT-------------------------------------------*/
 
 .catalog {
-    margin: 62px 237px 8px;
+    margin: -426px 237px 8px;
     padding-left: 12px;
     padding-bottom: 20px;
     background-image: linear-gradient(#e5e7e8, #93a7b0);
     border-radius: 5px;
-    position: relative;
-    top: 62px;
 }
 
 .product {
@@ -397,10 +389,9 @@ body > div > main > aside.leftside > a {
 }
 
 .logos {
-    margin: 33px 0 11px 155px;
+    margin: 28px 0 11px 155px;
     clear: both;
-    position: relative;
-    top: 65px;
+    float: left;
 }
 
 .logos li {
@@ -411,18 +402,17 @@ body > div > main > aside.leftside > a {
 /*----------------FOOTER------------*/
 footer {
     float: left;
+    clear: both;
     height: 99px;
     width: 908px;
-    position: relative;
-    top: 77px;
-    left: 46px;
+    margin: 1px 45px;
     background: #213a4d;
     border: 1px solid #242c3e;
 }
 
 .footer-nav {
     margin-top: 5px;
-    margin-left: 302px;
+    margin-left: 306px;
     margin-bottom: 10px;
 }
 
