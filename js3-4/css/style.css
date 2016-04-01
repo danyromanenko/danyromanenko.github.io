@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-left: 300px;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-left: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.button {  
+    margin-left: 296px;
+    margin-top: 30px;
+    width: 300px;
+}
+
+p {
+    margin: 0;
+  }
+
+.btn {
+    padding: 6px 60px;
