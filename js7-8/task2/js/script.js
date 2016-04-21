@@ -12,7 +12,6 @@ $(function () {
     
     $('.button').on('click', function (e) {
             
-        e.preventDefault();
         $('.tooltip').addClass('show');
     });
 });
