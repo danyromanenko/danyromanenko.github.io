@@ -13,8 +13,6 @@ $(document).ready(function () {
             var $tabs = $(this);
             var $contents = $tabs.find('> div > div');
             var $buttons = $tabs.find('> ul > li');
-            
-            i = 0;
 			
 			showPage = function (i) {
 				$contents.hide();
