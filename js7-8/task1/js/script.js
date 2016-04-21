@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	
-    $(".tabs").lightTabs();
+    $('.tabs').lightTabs();
 
 });
 
@@ -19,8 +19,8 @@ $(document).ready(function () {
 			showPage = function (i) {
 				$contents.hide();
 				$contents.eq(i).show();
-				$buttons.removeClass("active");
-				$buttons.eq(i).addClass("active");
+				$buttons.removeClass('active');
+				$buttons.eq(i).addClass('active');
 			};
 								
 			showPage(0);				
