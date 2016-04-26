@@ -1,6 +1,5 @@
 $(document).ready(function($) {
     
-});
 
     $('.dropdown').hover(function(){
         
@@ -24,3 +23,5 @@ $(document).ready(function($) {
     $('select').niceSelect();  //---------select-plugin
     
     $('.jquery_box').labelauty(); //-------checkbox-plugin
+
+});
