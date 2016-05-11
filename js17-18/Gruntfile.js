@@ -21,19 +21,29 @@ module.exports = function (grunt) {
             }
         },
         
-        concat: {
-            src: 'css/*.css',
-            dist: {
+        concat_css: {
+            options: {},
+            files: {
+                src: ["css/*.css"],
+                dest: "css/style.main.css"
+            },
+        },
+        
+        cssmin: {
+            options: {},
+            files:{
                 src: 'css/*.css',
-                dest: 'css/style.main.css'
+                dest: 'css/style.main.min.css',
             }},
     });
 
     // 3. Тут мы указываем Grunt, что хотим использовать этот плагин
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-concat-css');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['concat', 'uglify']);
+    grunt.registerTask('default', ['concat', 'uglify', 'concat_css', 'cssmin']);
 
 };
