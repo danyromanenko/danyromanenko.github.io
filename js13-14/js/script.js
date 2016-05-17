@@ -1,40 +1,30 @@
 'use strict';
 
-//объявляем массив объектов с вопросами и ответами
-var testData = [
-{
-    question: 'Вопрос №1',
-    answer: ['Ответ №1', 'Ответ №2', 'Ответ №3'],
-    check: ['true', 'false', 'false'],
-    name: 'first'
-},
-{
-    question: 'Вопрос №2',
-    answer: ['Ответ №1', 'Ответ №2', 'Ответ №3'],
-    check: ['false', 'true', 'false'],
-    name: 'second'
-},
-{
-    question: 'Вопрос №3',
-    answer: ['Ответ №1', 'Ответ №2', 'Ответ №3'],
-    check: ['false', 'false', 'true'],
-    name: 'third'
-}
+var questions = [
+    {id: 'quest-1', name: 'Вопрос №1', answers: ['Ответ №1', 'Ответ №2', 'Ответ №3']},
+    {id: 'quest-2', name: 'Вопрос №2', answers: ['Ответ №1', 'Ответ №2', 'Ответ №3']},
+    {id: 'quest-3', name: 'Вопрос №3', answers: ['Ответ №1', 'Ответ №2', 'Ответ №3']}
 ];
+var trueAnswers = {
+    'quest-1': 0,
+    'quest-2': 1,
+    'quest-3': 2
+};
+
 
 //записываем массив объектов с вопросами и ответами в localStorage
-localStorage.setItem('questionAnswer', JSON.stringify(testData));
+localStorage.setItem('questions', JSON.stringify(questions));
 
-$(function() {
+$(function () {
 
-var test = $('#test').html();
+    var test = $('#test').html();
 
-var content = localStorage.getItem('questionAnswer');
-content = JSON.parse(content);
+    var content = localStorage.getItem('questions');
+    content = JSON.parse(content);
 
-var page = tmpl(test, { //формируем тест с помощью шаблонизатора
-	data: content
-});
+    var page = tmpl(test, { //формируем тест с помощью шаблонизатора
+	    questions: content
+    });
 
 $('.show_test').click(function() { // выводим тест на экран по клику на кнопку
 	$('.show_test').hide();
@@ -43,15 +33,19 @@ $('.show_test').click(function() { // выводим тест на экран п
 });
 
 $('.check').on('click', function() { //проверяем результаты по клику на кнопку
-    var $result = true;
-        $('.checkbox').each(function() {
-        if ($(this).prop('checked') !=($(this).attr('value') == 'true')) {
-    			$result = false;
-                return false;
-    		}
-    });
+    var $form = $('form')[0];
+    var result = true;
+    for (var j = 0; j < questions.length; j++){
+				var questionIndex = parseInt($form[questions[j].id].value);
+				var valid = trueAnswers[questions[j].id] === questionIndex;
+        console.log(valid);
+        if (!valid){
+            result = false;
+            break;
+        }
+    };
 
-$('.modal_text')[0].innerHTML = $result ? 'Ответы верные, тест пройден' : 'Ответы неверные, тест не пройден'; // записываем результат теста в модальное окно
+$('.modal_text')[0].innerHTML = result ? 'Ответы верные, тест пройден' : 'Ответы неверные, тест не пройден'; // записываем результат теста в модальное окно
 $('.modal_window').css("display", "block").animate({opacity: 1}, 500); //показываем модальное окно
 $('.overlay').show('slow'); //показываем фон
 

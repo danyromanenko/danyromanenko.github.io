@@ -14,22 +14,22 @@
     <button class="show_test">Пройти тест</button>
   
     <script type="text/tamplate" id="test">
-        <div class="container">
+        <form id=my-form>
 
         <ol>
-        <% for (var i = 0; i < data.length; i++) { %>
+        <% for (var i = 0; i < questions.length; i++) { %>
      
-	        <li><%= data[i].question %></li>
+	        <li><%= questions[i].name %></li>
 
 	        <ul>
-	        <% for (var j = 0; j < data[i].answer.length; j++) { %>
-            <li><input type="radio" name="<%= data[i].name %>" class="checkbox" value="<%= data[i].check[j] %>"><%= data[i].answer[j] %></li>
+	        <% for (var j = 0; j < questions[i].answers.length; j++) { %>
+            <li><input type="radio" name="<%= questions[i].id %>" class="checkbox" value="<%= j %>"><%= questions[i].answers[j] %></li>
             <% }; %>
 	        </ul>
 
         <% }; %>
         </ol>
-        </div>
+        </form>
     </script>
 
      <button class="check">Проверить мои результаты</button>
