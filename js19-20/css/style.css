@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item footer address span, footer address .bottom .colomn .colomn_item span, applet, object, iframe,
+h1, h2, header .logo h6, h3, h4, .top .articles .articles_item h1, .top .articles .articles_item a, h5, h6, p, footer address span, footer address .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item footer address p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  margin: 0 auto;
+  width: 1160px; }
+
+header {
+  width: 100%;
+  height: 170px;
+  margin: 40px 0px; }
+  header .logo {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    width: 222px;
+    margin-top: 40px;
+    margin-bottom: 35px; }
+    header .logo h2, header .logo h6 {
+      color: #2a2d32;
+      font-family: "Ubuntu", sans-serif;
+      letter-spacing: 1px;
+      font-weight: 500;
+      margin-left: 50px;
+      font-size: 30px; }
+    header .logo h6 {
+      font-weight: lighter;
+      letter-spacing: 4px;
+      font-size: 12px; }
+  header .follow {
+    display: inline-block;
+    float: right;
+    margin-top: 60px; }
+    header .follow .fa, header .follow footer address p, footer address header .follow p, header .follow footer address span, footer address header .follow span, header .follow footer address .bottom .colomn .colomn_item p, footer address .bottom .colomn .colomn_item header .follow p, header .follow .bottom .colomn .colomn_item footer address p, .bottom .colomn .colomn_item footer address header .follow p {
+      display: inline-block;
+      float: right;
+      margin-left: 17px;
+      color: #828385; }
+    header .follow .fa:hover, header .follow footer address p:hover, footer address header .follow p:hover, header .follow footer address span:hover, footer address header .follow span:hover, header .follow footer address .bottom .colomn .colomn_item p:hover, footer address .bottom .colomn .colomn_item header .follow p:hover, header .follow .bottom .colomn .colomn_item footer address p:hover, .bottom .colomn .colomn_item footer address header .follow p:hover {
+      color: #248cec;
+      cursor: pointer; }
+  header nav {
+    clear: both;
+    width: 100%;
+    height: 55px;
+    background-color: #2a2d32; }
+    header nav ul li {
+      display: inline-block;
+      float: left;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 14px;
+      color: white;
+      height: 55px;
+      padding-left: 37px;
+      padding-right: 37px;
+      text-align: center;
+      border-right: 1px solid black; }
+      header nav ul li span, header nav ul li .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item header nav ul li p, header nav ul li .bottom .colomn .colomn_item footer address span, .bottom .colomn .colomn_item footer address header nav ul li span, header nav ul li footer address .bottom .colomn .colomn_item span, footer address .bottom .colomn .colomn_item header nav ul li span {
+        margin-top: 19px;
+        display: inline-block; }
+    header nav ul li:first-child {
+      background-color: #248cec; }
+    header nav ul li:hover {
+      color: #f4b60d;
+      cursor: pointer; }
+    header nav .search {
+      background-color: #35383c;
+      float: right;
+      width: 237px;
+      margin-top: 8px;
+      margin-right: 8px;
+      height: 19px;
+      padding: 10px;
+      border: 1px solid black;
+      color: #828385; }
+      header nav .search i {
+        float: right; }
+      header nav .search input {
+        float: right;
+        background-color: #35383c;
+        height: 15px;
+        width: 200px;
+        padding: 3px;
+        border: none;
+        outline: none;
+        color: #828385; }
+
+.top {
+  width: 100%;
+  height: 805px; }
+  .top .flexslider {
+    height: 470px;
+    width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; }
+    .top .flexslider ul {
+      width: 200000em;
+      position: relative; }
+      .top .flexslider ul li {
+        float: left; }
+  .top .custom-navigation {
+    margin-top: -32px;
+    left: 58%;
+    height: 15px;
+    width: 90px;
+    position: absolute;
+    z-index: 1; }
+    .top .custom-navigation .flex-control-paging li {
+      display: inline-block;
+      float: left; }
+      .top .custom-navigation .flex-control-paging li a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin-right: 15px;
+        background-color: white;
+        text-indent: -9999px; }
+      .top .custom-navigation .flex-control-paging li .flex-active {
+        background-image: url("../img/active_slide.png");
+        background-repeat: no-repeat;
+        background-position: center; }
+    .top .custom-navigation .flex-direction-nav {
+      display: none; }
+  .top .Carousel_text {
+    position: absolute;
+    display: block;
+    height: 195px;
+    width: 310px;
+    z-index: 3;
+    margin: -235px 37px 37px 37px; }
+    .top .Carousel_text div span, .top .Carousel_text div .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item .top .Carousel_text div p, .top .Carousel_text div .bottom .colomn .colomn_item footer address span, .bottom .colomn .colomn_item footer address .top .Carousel_text div span, .top .Carousel_text div footer address .bottom .colomn .colomn_item span, footer address .bottom .colomn .colomn_item .top .Carousel_text div span {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 54px;
+      color: white;
+      background-color: rgba(42, 45, 50, 0.9);
+      padding: 0px 27px 27px 27px; }
+    .top .Carousel_text div:first-child span, .top .Carousel_text .bottom .colomn .colomn_item div:nth-child(2) span, .bottom .colomn .colomn_item .top .Carousel_text div:nth-child(2) span, .top .Carousel_text div:first-child .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item .top .Carousel_text div:first-child p, .top .Carousel_text .bottom .colomn .colomn_item div:nth-child(2) p, .bottom .colomn .colomn_item .top .Carousel_text div:nth-child(2) p {
+      color: #f4b60d;
+      padding-top: 27px; }
+  .top .articles {
+    margin-top: 60px; }
+    .top .articles .articles_item {
+      display: inline-block;
+      float: left;
+      height: 210px;
+      width: 355px;
+      margin-right: 40px; }
+      .top .articles .articles_item h4, .top .articles .articles_item h1, .top .articles .articles_item a {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        color: #2a2d32;
+        font-size: 20px;
+        display: block;
+        float: left;
+        margin: 60px 0px 22px -55px; }
+      .top .articles .articles_item h1 {
+        font-size: 90px;
+        color: #828385;
+        display: block;
+        opacity: 0.5;
+        margin: 0px; }
+      .top .articles .articles_item div {
+        height: 35px;
+        width: 35px;
+        display: inline-block;
+        float: left;
+        margin: 12px 20px; }
+        .top .articles .articles_item div.left {
+          background: url("../img/articles_sprite.png") 0 0;
+          background-repeat: no-repeat; }
+        .top .articles .articles_item div.middle {
+          background: url("../img/articles_sprite.png") -40px 0;
+          background-repeat: no-repeat; }
+        .top .articles .articles_item div.right {
+          background: url("../img/articles_sprite.png") -81px 0;
+          background-repeat: no-repeat; }
+      .top .articles .articles_item p, .top .articles .articles_item footer address span, footer address .top .articles .articles_item span {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #828385;
+        display: block;
+        width: 240px;
+        overflow: hidden;
+        float: left;
+        margin-left: 120px; }
+      .top .articles .articles_item a {
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        margin: 25px 10px 10px 125px; }
+      .top .articles .articles_item a:hover {
+        color: #248cec; }
+    .top .articles .articles_item:last-child {
+      margin-right: 0px; }
+
+.services {
+  background-color: rgba(42, 45, 50, 0.9);
+  clear: both;
+  height: 450px;
+  width: 100%;
+  padding-top: 50px; }
+  .services p, .services footer address span, footer address .services span, .services footer address .bottom .colomn .colomn_item p, footer address .bottom .colomn .colomn_item .services p, .services .bottom .colomn .colomn_item footer address p, .bottom .colomn .colomn_item footer address .services p {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .services figure {
+    display: inline-block;
+    float: left;
+    margin: 20px; }
+    .services figure img {
+      width: 255px; }
+    .services figure img:nth-child(2) {
+      position: absolute;
+      margin-top: -258px;
+      display: none; }
+    .services figure p, .services figure footer address span, footer address .services figure span, .services figure footer address .bottom .colomn .colomn_item p, footer address .bottom .colomn .colomn_item .services figure p, .services figure .bottom .colomn .colomn_item footer address p, .bottom .colomn .colomn_item footer address .services figure p {
+      font-size: 16px;
+      left: 50%;
+      text-align: center;
+      margin-top: 35px; }
+  .services figure:hover {
+    cursor: pointer; }
+    .services figure:hover img:nth-child(2) {
+      display: block; }
+    .services figure:hover p, .services figure:hover footer address span, footer address .services figure:hover span, .services figure:hover footer address .bottom .colomn .colomn_item p, footer address .bottom .colomn .colomn_item .services figure:hover p, .services figure:hover .bottom .colomn .colomn_item footer address p, .bottom .colomn .colomn_item footer address .services figure:hover p {
+      color: #f4b60d; }
+  .services figure:last-child {
+    margin-right: 0px; }
+
+.bottom {
+  background-color: #f7f7f7;
+  height: 545px;
+  width: 100%; }
+  .bottom .colomn {
+    display: inline-block;
+    float: left;
+    width: 500px;
+    height: 545px; }
+    .bottom .colomn .colomn:nth-child(2) {
+      margin-left: 95px; }
+    .bottom .colomn .colomn-tittle {
+      font-family: "Ubuntu", sans-serif;
+      color: #2a2d32;
+      font-size: 24px;
+      font-weight: 500;
+      margin: 55px 0px; }
+    .bottom .colomn .accordion {
+      overflow: hidden;
+      border-radius: 3px; }
+      .bottom .colomn .accordion .accordion-section-tittle {
+        width: 100%;
+        display: inline-block;
+        border: 1px solid #e8e8e8;
+        background-color: white;
+        font-family: "Ubuntu", sans-serif;
+        color: #2a2d32;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 30px;
+        text-decoration: none;
+        height: 35px;
+        margin: 5px;
+        vertical-align: baseline; }
+        .bottom .colomn .accordion .accordion-section-tittle span, .bottom .colomn .accordion .accordion-section-tittle .colomn_item p, .bottom .colomn .colomn_item .accordion .accordion-section-tittle p {
+          height: 35px;
+          width: 35px;
+          display: inline-block;
+          border-right: 2px solid #e8e8e8;
+          text-align: center; }
+        .bottom .colomn .accordion .accordion-section-tittle span:before, .bottom .colomn .accordion .accordion-section-tittle .colomn_item p:before, .bottom .colomn .colomn_item .accordion .accordion-section-tittle p:before {
+          content: "+"; }
+      .bottom .colomn .accordion .accordion-section-tittle.active, .bottom .colomn .accordion .accordion-section-tittle:hover {
+        background-color: #f4b60d;
+        color: white; }
+        .bottom .colomn .accordion .accordion-section-tittle.active span:before, .bottom .colomn .accordion .accordion-section-tittle.active .colomn_item p:before, .bottom .colomn .colomn_item .accordion .accordion-section-tittle.active p:before, .bottom .colomn .accordion .accordion-section-tittle:hover span:before, .bottom .colomn .accordion .accordion-section-tittle:hover .colomn_item p:before, .bottom .colomn .colomn_item .accordion .accordion-section-tittle:hover p:before {
+          content: "-"; }
+      .bottom .colomn .accordion .accordion-section-content {
+        display: none;
+        color: #828385;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        margin: 20px 0px 20px 35px; }
+    .bottom .colomn .colomn_item {
+      clear: both;
+      margin-top: 27px;
+      height: 150px; }
+      .bottom .colomn .colomn_item img {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        display: inline-block;
+        float: left; }
+      .bottom .colomn .colomn_item div:first-child, .bottom .colomn .colomn_item div:nth-child(2) {
+        position: absolute;
+        z-index: 3;
+        height: 40px;
+        width: 40px;
+        margin: 10px 0px 0px -20px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 35px;
+        color: white;
+        background-color: #248cec; }
+      .bottom .colomn .colomn_item div:nth-child(2) {
+        margin: 50px 0px 0px -20px;
+        color: #2a2d32;
+        background-color: #f4b60d; }
+      .bottom .colomn .colomn_item h5 {
+        display: inline-block;
+        float: left;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 7px; }
+      .bottom .colomn .colomn_item h5:hover {
+        cursor: pointer;
+        color: #248cec; }
+      .bottom .colomn .colomn_item span, .bottom .colomn .colomn_item p {
+        display: block;
+        float: left;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #828385;
+        margin-left: 7px; }
+        .bottom .colomn .colomn_item span a, .bottom .colomn .colomn_item p a {
+          color: #248cec;
+          text-decoration: none; }
+      .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item footer address span, footer address .bottom .colomn .colomn_item span {
+        width: 325px;
+        margin-top: 30px; }
+
+.logos {
+  clear: both;
+  padding-top: 100px;
+  height: 140px;
+  width: 960px;
+  margin: 0 auto; }
+  .logos .logos_item {
+    display: inline-block;
+    float: left; }
+
+footer {
+  clear: both;
+  background-color: rgba(42, 45, 50, 0.9);
+  height: 320px;
+  width: 100%;
+  padding-top: 60px; }
+  footer .footer-item {
+    display: inline-block;
+    float: left;
+    width: 267px;
+    height: 180px;
+    margin-bottom: 80px;
+    margin-right: 30px; }
+    footer .footer-item h3 {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 45px;
+      color: white; }
+    footer .footer-item ul {
+      margin-right: 10px; }
+      footer .footer-item ul li {
+        border-bottom: 1px solid #828385;
+        width: 260px;
+        height: 20px; }
+        footer .footer-item ul li a {
+          font-family: Arial, sans-serif;
+          text-decoration: none;
+          font-size: 13px;
+          color: #828385; }
+        footer .footer-item ul li a:hover {
+          color: #248cec; }
+      footer .footer-item ul li:last-child {
+        border-bottom: none; }
+  footer .footer-item:last-child {
+    margin-right: 0px; }
+  footer address {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(42, 45, 50, 0.8);
+    clear: both;
+    text-align: center; }
+    footer address .fa, footer address p, footer address span, footer address .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item footer address p {
+      float: left;
+      color: #828385;
+      font-size: 12px;
+      margin-right: 10px;
+      margin-top: 23px; }
+    footer address p, footer address span, footer address .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item footer address p {
+      font-family: Arial, sans-serif;
+      margin-right: 40px; }
+    footer address span, footer address .bottom .colomn .colomn_item p, .bottom .colomn .colomn_item footer address p, .bottom .colomn .colomn_item footer address span, footer address .bottom .colomn .colomn_item span {
+      margin-left: 350px; }
+
+/*# sourceMappingURL=style.css.map */
