@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/templateJohnResig.js"></script> 
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>JS13-14</title>
+</head>
+<body>
+    <h2>TEST</h2>
+    <button class="show_test">Пройти тест</button>
+  
+    <script type="text/tamplate" id="test">
+        <form id=my-form>
+
+        <ol>
+        <% for (var i = 0; i < questions.length; i++) { %>
+     
+	        <li><%= questions[i].name %></li>
+
+	        <ul>
+	        <% for (var j = 0; j < questions[i].answers.length; j++) { %>
+            <li><input type="radio" name="<%= questions[i].id %>" class="checkbox" value="<%= j %>"><%= questions[i].answers[j] %></li>
+            <% }; %>
+	        </ul>
+
+        <% }; %>
+        </ol>
+        </form>
+    </script>
+
+     <button class="check">Проверить мои результаты</button>
+
+     <div class="modal_window">
+	     <p class="modal_text"></p>
+	     <button class="modal_button">OK</button>
+     </div>
+     <div class="overlay"></div>
+   
+</body>
+</html>
