@@ -10,9 +10,8 @@ describe("app", function() {
   //assert
     expect(result).toEqual(25);
   });
-});
 
-describe("app", function() {
+
   it("it should call pow method", function() {
 
   //prepare
@@ -22,9 +21,8 @@ describe("app", function() {
   //assert
     expect(result).toEqual(256);
   });
-});
 
-describe("app", function() {
+
   it("it should call pow method", function() {
 
   //prepare
@@ -34,4 +32,5 @@ describe("app", function() {
   //assert
     expect(result).toEqual(3375);
   });
+
 });
