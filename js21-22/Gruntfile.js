@@ -59,7 +59,7 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: 'task2/js/src',
                 src: 'script.js',
-                dest: 'task2/js',
+                dest: 'task2/js/build',
                 ext: '.js',
                 extDot: 'first'
             }]
