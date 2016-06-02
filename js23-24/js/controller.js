@@ -1,20 +1,11 @@
-define(
-    'controller',
-    ['jquery',
-    'tmpl',
-     'model',
-     'view'],
-    
-
-
-
+define(['jquery', 'tmpl', 'model', 'view'],
+       
     function () {
-        return {
-            controller: function (model, view) {
+            var Controller = function (model, view) {
                 var self = this;
     
                 view.elements.addBtn.on('click', addItem);
-                view.elements.listContainer.on('click', 'item-delete', removeItem);
+                view.elements.listContainer.on('click', '.item-delete', removeItem);
     
                 function addItem() {
                     var newItem = view.elements.input.val();
@@ -29,7 +20,6 @@ define(
                     view.renderList(model.data);
                 }
 
-            }
-        };
-    }
-);
+            };
+        return Controller;
+    });

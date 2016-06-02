@@ -1,14 +1,7 @@
-define(
-    'view',
-    ['jquery',
-    'tmpl',
-     'model'],
-
-
-
+define(['jquery', 'tmpl', 'model'],
+       
     function () {
-        return {
-            view: function (model) {
+            var View = function (model) {
                 var self = this;
     
                 function init() {
@@ -30,7 +23,6 @@ define(
                 };
     
                 init();
-            }
-        };
-    }
-);
+            };
+        return View;
+    });
