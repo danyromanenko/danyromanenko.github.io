@@ -3,7 +3,7 @@
   header{
     height: 700px;
     width: 100%;
-    background: url(../../src/img/banner-desktop.jpg) center;
+    background: url(../build/img/banner-desktop.jpg) center;
 
     .header_logo {
       margin-top: 46px;
@@ -75,7 +75,7 @@
   .slider3 span{
     height: 401px;
     width: 236px;
-    background: url(../../src/img/steps-spriteT.png) no-repeat 0 0;
+    background: url(../build/img/steps-spriteT.png) no-repeat 0 0;
   }
   .slider1 span:nth-child(2),
   .slider2 span:nth-child(2),
