@@ -74,7 +74,7 @@ header {
   margin: 0 auto;
   text-align: center;
   font-family: "montserratbold", sans-serif;
-  background: url(../../src/img/banner-desktop.jpg) center 5px;
+  background: url(../build/img/banner-desktop.jpg) center 5px;
   background-size: cover;
   position: relative; }
   header a {
@@ -174,7 +174,7 @@ header {
 .slider3 span {
   height: 240px;
   width: 300px;
-  background: url(../../src/img/steps-sprite.png) no-repeat 0 0; }
+  background: url(../build/img/steps-sprite.png) no-repeat 0 0; }
 
 .slider1 span:nth-child(2),
 .slider2 span:nth-child(2),
@@ -248,7 +248,7 @@ header {
   margin: 0 auto;
   display: block;
   border-radius: 100%;
-  background: url(../../src/img/partners-sprite.png) no-repeat 0 0; }
+  background: url(../build/img/partners-sprite.png) no-repeat 0 0; }
 
 .second span {
   background-position: 0 -121px; }
@@ -267,7 +267,7 @@ header {
   width: 41px;
   display: block;
   border-radius: 100%;
-  background: url(../../src/img/sendIcon-sprite.png) no-repeat 0 0;
+  background: url(../build/img/sendIcon-sprite.png) no-repeat 0 0;
   position: absolute;
   right: 95px;
   bottom: -22px; }
@@ -316,7 +316,7 @@ header {
   display: table-cell;
   vertical-align: middle;
   border-radius: 5px;
-  background: url(../../src/img/ideaExample.jpg) no-repeat 0 0; }
+  background: url(../build/img/ideaExample.jpg) no-repeat 0 0; }
 
 .tiles_text {
   margin-top: -5px;
@@ -405,7 +405,7 @@ footer {
   width: 110px;
   margin: 10px auto 20px auto;
   display: block;
-  background: url(../../src/img/footerLogo.png); }
+  background: url(../build/img/footerLogo.png); }
 
 /* ---- .grid-item ---- */
 .grid-sizer,
@@ -451,7 +451,7 @@ footer {
   header {
     height: 700px;
     width: 100%;
-    background: url(../../src/img/banner-desktop.jpg) center; }
+    background: url(../build/img/banner-desktop.jpg) center; }
     header .header_logo {
       margin-top: 46px;
       margin-left: 49px;
@@ -517,7 +517,7 @@ footer {
   .slider3 span {
     height: 401px;
     width: 236px;
-    background: url(../../src/img/steps-spriteT.png) no-repeat 0 0; }
+    background: url(../build/img/steps-spriteT.png) no-repeat 0 0; }
 
   .slider1 span:nth-child(2),
   .slider2 span:nth-child(2),
@@ -620,7 +620,7 @@ footer {
   header {
     height: 700px;
     width: 100%;
-    background: url(../../src/img/banner-desktop.jpg) center; }
+    background: url(../build/img/banner-desktop.jpg) center; }
     header .header_logo {
       margin-top: 46px;
       margin-left: 235px;
@@ -687,7 +687,7 @@ footer {
   .slider3 span {
     height: 401px;
     width: 300px;
-    background: url(../../src/img/steps-sprite-desk.png) no-repeat 0 0; }
+    background: url(../build/img/steps-sprite-desk.png) no-repeat 0 0; }
 
   .slider1 span:nth-child(2),
   .slider2 span:nth-child(2),
