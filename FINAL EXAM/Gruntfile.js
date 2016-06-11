@@ -24,7 +24,7 @@ module.exports = function (grunt) {
         concat_css: {
             options: {},
             files: {
-                src: ["build/css/*.css"],
+                src: ["build/css/style.css"],
                 dest: "build/css/style.main.css"
             }
         },
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         cssmin: {
             options: {},
             files: {
-                src: 'build/css/*.css',
+                src: 'build/css/style.main.css',
                 dest: 'build/css/style.main.min.css'
             }
         },
